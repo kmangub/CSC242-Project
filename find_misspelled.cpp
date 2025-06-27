@@ -5,6 +5,9 @@
 #include <unordered_set>
 using namespace std;
 
+/// @brief Changes string to lowercase
+/// @param str 
+/// @return return strings
 string toLowerCase(const string& str) {
     string lowerStr = str;
     for (char& c : lowerStr) {
@@ -13,6 +16,9 @@ string toLowerCase(const string& str) {
     return lowerStr;
 }
 
+/// @brief Prints the words that are misspelled
+/// @param words containing vector of words and badwords
+/// @param badWords that contain a vector of words
 void printUnmatchedWords(const vector<string>& words, const vector<string>& badWords) {
     unordered_set<string> wordSet(words.begin(), words.end());
 
